@@ -1,0 +1,384 @@
+2017/04/27 20:44:20 [debug] 27952#0: bind() 0.0.0.0:1984 #6 
+2017/04/27 20:44:20 [notice] 27952#0: using the "epoll" event method
+2017/04/27 20:44:20 [notice] 27952#0: openresty/1.11.2.4
+2017/04/27 20:44:20 [notice] 27952#0: built by gcc 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) 
+2017/04/27 20:44:20 [notice] 27952#0: OS: Linux 3.10.0-327.36.2.el7.x86_64
+2017/04/27 20:44:20 [notice] 27952#0: getrlimit(RLIMIT_NOFILE): 65535:65535
+2017/04/27 20:44:20 [debug] 27953#0: write: 7, 00007FFD69C59CD0, 6, 0
+2017/04/27 20:44:20 [debug] 27953#0: notify eventfd: 7
+2017/04/27 20:44:20 [debug] 27953#0: eventfd: 8
+2017/04/27 20:44:20 [debug] 27953#0: testing the EPOLLRDHUP flag: success
+2017/04/27 20:44:20 [debug] 27953#0: malloc: 00007FD19A388E60:6144
+2017/04/27 20:44:20 [debug] 27953#0: malloc: 00007FD19A37FE30:14848
+2017/04/27 20:44:20 [debug] 27953#0: malloc: 00007FD19A38A670:6144
+2017/04/27 20:44:20 [debug] 27953#0: malloc: 00007FD19A3AF200:6144
+2017/04/27 20:44:20 [debug] 27953#0: epoll add event: fd:6 op:1 ev:00002001
+2017/04/27 20:44:20 [debug] 27953#0: worker cycle
+2017/04/27 20:44:20 [debug] 27953#0: epoll timer: -1
+2017/04/27 20:44:20 [debug] 27953#0: epoll: fd:6 ev:0001 d:00007FD19A37FE30
+2017/04/27 20:44:20 [debug] 27953#0: accept on 0.0.0.0:1984, ready: 0
+2017/04/27 20:44:20 [debug] 27953#0: posix_memalign: 00007FD19A38BE80:512 @16
+2017/04/27 20:44:20 [debug] 27953#0: *1 accept: 127.0.0.1:49642 fd:9
+2017/04/27 20:44:20 [debug] 27953#0: *1 event timer add: 9: 60000:1493297120844
+2017/04/27 20:44:20 [debug] 27953#0: *1 reusable connection: 1
+2017/04/27 20:44:20 [debug] 27953#0: *1 epoll add event: fd:9 op:1 ev:80002001
+2017/04/27 20:44:20 [debug] 27953#0: timer delta: 23
+2017/04/27 20:44:20 [debug] 27953#0: worker cycle
+2017/04/27 20:44:20 [debug] 27953#0: epoll timer: 60000
+2017/04/27 20:44:20 [debug] 27953#0: epoll: fd:9 ev:0001 d:00007FD19A37FF18
+2017/04/27 20:44:20 [debug] 27953#0: *1 http wait request handler
+2017/04/27 20:44:20 [debug] 27953#0: *1 malloc: 00007FD19A37AD70:1024
+2017/04/27 20:44:20 [debug] 27953#0: *1 recv: eof:0, avail:1
+2017/04/27 20:44:20 [debug] 27953#0: *1 recv: fd:9 55 of 1024
+2017/04/27 20:44:20 [debug] 27953#0: *1 reusable connection: 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 posix_memalign: 00007FD19A3B0A10:4096 @16
+2017/04/27 20:44:20 [debug] 27953#0: *1 http process request line
+2017/04/27 20:44:20 [debug] 27953#0: *1 http request line: "GET /t HTTP/1.1"
+2017/04/27 20:44:20 [debug] 27953#0: *1 http uri: "/t"
+2017/04/27 20:44:20 [debug] 27953#0: *1 http args: ""
+2017/04/27 20:44:20 [debug] 27953#0: *1 http exten: ""
+2017/04/27 20:44:20 [debug] 27953#0: *1 http process request header line
+2017/04/27 20:44:20 [debug] 27953#0: *1 http header: "Host: localhost"
+2017/04/27 20:44:20 [debug] 27953#0: *1 http header: "Connection: close"
+2017/04/27 20:44:20 [debug] 27953#0: *1 http header done
+2017/04/27 20:44:20 [debug] 27953#0: *1 event timer del: 9: 1493297120844
+2017/04/27 20:44:20 [debug] 27953#0: *1 rewrite phase: 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 rewrite phase: 1
+2017/04/27 20:44:20 [debug] 27953#0: *1 test location: "/"
+2017/04/27 20:44:20 [debug] 27953#0: *1 test location: "t"
+2017/04/27 20:44:20 [debug] 27953#0: *1 using configuration "=/t"
+2017/04/27 20:44:20 [debug] 27953#0: *1 http cl:-1 max:31457280
+2017/04/27 20:44:20 [debug] 27953#0: *1 rewrite phase: 3
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua rewrite handler, uri:"/t" c:1
+2017/04/27 20:44:20 [debug] 27953#0: *1 rewrite phase: 3
+2017/04/27 20:44:20 [debug] 27953#0: *1 rewrite phase: 4
+2017/04/27 20:44:20 [debug] 27953#0: *1 rewrite phase: 5
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua rewrite handler, uri:"/t" c:1
+2017/04/27 20:44:20 [debug] 27953#0: *1 posix_memalign: 00007FD19A3B1A20:4096 @16
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua creating new thread
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua reset ctx
+2017/04/27 20:44:20 [debug] 27953#0: *1 http cleanup add: 00007FD19A3B19E8
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua run thread, top:0 c:1
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket pool get keepalive peer
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket keepalive connection pool not found
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket connect timeout: 500
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket network address given directly
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket resolve retval handler
+2017/04/27 20:44:20 [debug] 27953#0: *1 stream socket 10
+2017/04/27 20:44:20 [debug] 27953#0: *1 epoll add connection: fd:10 ev:80002005
+2017/04/27 20:44:20 [debug] 27953#0: *1 connect to unix:/var/run/docker.sock, fd:10 #2
+2017/04/27 20:44:20 [debug] 27953#0: *1 connected
+2017/04/27 20:44:20 [debug] 27953#0: *1 http cleanup add: 00007FD19A3B1CD0
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket connect: 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 posix_memalign: 00007FD19A384A40:128 @16
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket connected: fd:10
+2017/04/27 20:44:20 [debug] 27953#0: *1 [lua] http.lua:610: send_request(): 
+GET /containers/json HTTP/1.1
+Host: 127.0.0.1
+Content-Length: 0
+User-Agent: lua-resty-http/0.10 (Lua) ngx_lua/10007
+
+
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket send timeout: 500
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua allocate new chainlink and new buf of size 122, cl:00007FD19A3B1A00
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket send data
+2017/04/27 20:44:20 [debug] 27953#0: *1 send: fd:10 122 of 122
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket sent all the data
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket send timeout: 500
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket calling receive() method
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read timeout: 500
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua allocate new chainlink and new buf of size 4096, cl:00007FD19A3B1DB8
+2017/04/27 20:44:20 [debug] 27953#0: *1 malloc: 00007FD19A3B2A30:4096
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read data: wait:0
+2017/04/27 20:44:20 [debug] 27953#0: *1 event timer add: 10: 500:1493297061344
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua resume returned 1
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua thread yielded
+2017/04/27 20:44:20 [debug] 27953#0: timer delta: 0
+2017/04/27 20:44:20 [debug] 27953#0: worker cycle
+2017/04/27 20:44:20 [debug] 27953#0: epoll timer: 500
+2017/04/27 20:44:20 [debug] 27953#0: epoll: fd:10 ev:0004 d:00007FD19A380000
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket handler for "/t?", wev 1
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket dummy handler
+2017/04/27 20:44:20 [debug] 27953#0: timer delta: 3
+2017/04/27 20:44:20 [debug] 27953#0: worker cycle
+2017/04/27 20:44:20 [debug] 27953#0: epoll timer: 497
+2017/04/27 20:44:20 [debug] 27953#0: epoll: fd:10 ev:0005 d:00007FD19A380000
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket handler for "/t?", wev 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read handler
+2017/04/27 20:44:20 [debug] 27953#0: *1 event timer del: 10: 1493297061344
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read data: wait:1
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket try to recv data 4096: "/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 recv: eof:0, avail:1
+2017/04/27 20:44:20 [debug] 27953#0: *1 recv: fd:10 4096 of 4096
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket recv returned 4096: "/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read line
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read the final line part: "HTTP/1.1 200 OK"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done: wait:1, eof:0, uri:"/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket waking up the current request (read)
+2017/04/27 20:44:20 [debug] 27953#0: *1 rewrite phase: 5
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua rewrite handler, uri:"/t" c:1
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp operation done, resuming lua thread
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket calling prepare retvals handler 000000000050FA80, u:0000000041F07A80
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive return value handler
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua run thread, top:0 c:1
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket calling receive() method
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read timeout: 500
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read data: wait:0
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read line
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read the final line part: "Api-Version: 1.27"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done in a single run
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive return value handler
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua regex cache miss for match regex "([^:\s]+):\s*(.+)" with options "jo"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua compiling match regex "([^:\s]+):\s*(.+)" with options "jo" (compile once: 1) (dfa mode: 0) (jit mode: 1)
+2017/04/27 20:44:20 [debug] 27953#0: malloc: 00007FD19A3B3A40:4096
+2017/04/27 20:44:20 [debug] 27953#0: malloc: 00007FD19A3B4A50:4096
+2017/04/27 20:44:20 [debug] 27953#0: free: 00007FD19A3B3A40
+2017/04/27 20:44:20 [debug] 27953#0: free: 00007FD19A3B4A50
+2017/04/27 20:44:20 [debug] 27953#0: *1 pcre JIT compiling result: 1
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua saving compiled regex (2 captures) into the cache (entries 0)
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua regex cache miss for match regex "^\s*$" with options "jo"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua compiling match regex "^\s*$" with options "jo" (compile once: 1) (dfa mode: 0) (jit mode: 1)
+2017/04/27 20:44:20 [debug] 27953#0: malloc: 00007FD19A3B3A40:4096
+2017/04/27 20:44:20 [debug] 27953#0: malloc: 00007FD19A3B4A50:4096
+2017/04/27 20:44:20 [debug] 27953#0: free: 00007FD19A3B3A40
+2017/04/27 20:44:20 [debug] 27953#0: free: 00007FD19A3B4A50
+2017/04/27 20:44:20 [debug] 27953#0: *1 pcre JIT compiling result: 1
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua saving compiled regex (0 captures) into the cache (entries 1)
+2017/04/27 20:44:20 [debug] 27953#0: *1 regex "^\s*$" not matched on string "Api-Version: 1.27" starting from 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket calling receive() method
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read timeout: 500
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read data: wait:0
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read line
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read the final line part: "Content-Type: application/json"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done in a single run
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive return value handler
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua regex cache hit for match regex "([^:\s]+):\s*(.+)" with options "jo"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua regex cache hit for match regex "^\s*$" with options "jo"
+2017/04/27 20:44:20 [debug] 27953#0: *1 regex "^\s*$" not matched on string "Content-Type: application/json" starting from 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket calling receive() method
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read timeout: 500
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read data: wait:0
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read line
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read the final line part: "Docker-Experimental: false"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done in a single run
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive return value handler
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua regex cache hit for match regex "([^:\s]+):\s*(.+)" with options "jo"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua regex cache hit for match regex "^\s*$" with options "jo"
+2017/04/27 20:44:20 [debug] 27953#0: *1 regex "^\s*$" not matched on string "Docker-Experimental: false" starting from 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket calling receive() method
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read timeout: 500
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read data: wait:0
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read line
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read the final line part: "Server: Docker/17.03.1-ce (linux)"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done in a single run
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive return value handler
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua regex cache hit for match regex "([^:\s]+):\s*(.+)" with options "jo"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua regex cache hit for match regex "^\s*$" with options "jo"
+2017/04/27 20:44:20 [debug] 27953#0: *1 regex "^\s*$" not matched on string "Server: Docker/17.03.1-ce (linux)" starting from 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket calling receive() method
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read timeout: 500
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read data: wait:0
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read line
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read the final line part: "Date: Thu, 27 Apr 2017 12:44:20 GMT"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done in a single run
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive return value handler
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua regex cache hit for match regex "([^:\s]+):\s*(.+)" with options "jo"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua regex cache hit for match regex "^\s*$" with options "jo"
+2017/04/27 20:44:20 [debug] 27953#0: *1 regex "^\s*$" not matched on string "Date: Thu, 27 Apr 2017 12:44:20 GMT" starting from 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket calling receive() method
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read timeout: 500
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read data: wait:0
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read line
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read the final line part: "Transfer-Encoding: chunked"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done in a single run
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive return value handler
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua regex cache hit for match regex "([^:\s]+):\s*(.+)" with options "jo"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua regex cache hit for match regex "^\s*$" with options "jo"
+2017/04/27 20:44:20 [debug] 27953#0: *1 regex "^\s*$" not matched on string "Transfer-Encoding: chunked" starting from 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket calling receive() method
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read timeout: 500
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read data: wait:0
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read line
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read the final line part: ""
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done in a single run
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive return value handler
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua regex cache hit for match regex "([^:\s]+):\s*(.+)" with options "jo"
+2017/04/27 20:44:20 [debug] 27953#0: *1 regex "([^:\s]+):\s*(.+)" not matched on string "" starting from 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua reuse free buf memory 122 >= 28, cl:00007FD19A3B1A00, p:00007FD19A3B1D38
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua say response
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua capture header filter, uri "/t"
+2017/04/27 20:44:20 [debug] 27953#0: *1 HTTP/1.1 200 OK
+Server: openresty/1.11.2.4
+Date: Thu, 27 Apr 2017 12:44:20 GMT
+Content-Type: text/plain
+Transfer-Encoding: chunked
+Connection: close
+
+2017/04/27 20:44:20 [debug] 27953#0: *1 write new buf t:1 f:0 00007FD19A3B2200, pos 00007FD19A3B2200, size: 157 file: 0, size: 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 http write filter: l:0 f:0 s:157
+2017/04/27 20:44:20 [debug] 27953#0: *1 http output filter "/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 http copy filter: "/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua capture body filter, uri "/t"
+2017/04/27 20:44:20 [debug] 27953#0: *1 http postpone filter "/t?" 00007FD19A3B1A00
+2017/04/27 20:44:20 [debug] 27953#0: *1 http chunk: 28
+2017/04/27 20:44:20 [debug] 27953#0: *1 write old buf t:1 f:0 00007FD19A3B2200, pos 00007FD19A3B2200, size: 157 file: 0, size: 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 write new buf t:1 f:0 00007FD19A3B2390, pos 00007FD19A3B2390, size: 4 file: 0, size: 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 write new buf t:1 f:0 00007FD19A3B1D38, pos 00007FD19A3B1D38, size: 28 file: 0, size: 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 write new buf t:0 f:0 0000000000000000, pos 00000000006D7296, size: 2 file: 0, size: 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 http write filter: l:0 f:0 s:191
+2017/04/27 20:44:20 [debug] 27953#0: *1 http copy filter: 0 "/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua resume returned 1
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua thread yielded
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua coroutine: resume
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket calling receive() method
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read timeout: 500
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read data: wait:0
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read line
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read the final line part: "157a"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done in a single run
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive return value handler
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket calling receive() method
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read timeout: 500
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read data: wait:0
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read chunk 3892
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua allocate new chainlink and new buf of size 4096, cl:00007FD19A3B2438
+2017/04/27 20:44:20 [debug] 27953#0: *1 malloc: 00007FD19A3B3A40:4096
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket try to recv data 4096: "/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 recv: eof:0, avail:1
+2017/04/27 20:44:20 [debug] 27953#0: *1 recv: fd:10 1613 of 4096
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket recv returned 1613: "/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read chunk 1613
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done in a single run
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive return value handler
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua resume returned 1
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua thread yielded
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua coroutine: yield
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua resume returned 1
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua thread yielded
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua coroutine: resume
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket calling receive() method
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read timeout: 500
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read data: wait:0
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read chunk 7
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done in a single run
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive return value handler
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket calling receive() method
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read timeout: 500
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read data: wait:0
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read line
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read the final line part: "0"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done in a single run
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive return value handler
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket calling receive() method
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read timeout: 500
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read data: wait:0
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket read chunk 2
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive done in a single run
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua tcp socket receive return value handler
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua resume returned 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua light thread ended normally
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua coroutine: lua user thread ended normally
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua allocate new chainlink and new buf of size 5499, cl:00007FD19A3B24A8
+2017/04/27 20:44:20 [debug] 27953#0: *1 malloc: 00007FD19A3B4A50:5499
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua say response
+2017/04/27 20:44:20 [debug] 27953#0: *1 http output filter "/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 http copy filter: "/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua capture body filter, uri "/t"
+2017/04/27 20:44:20 [debug] 27953#0: *1 http postpone filter "/t?" 00007FD19A3B24A8
+2017/04/27 20:44:20 [debug] 27953#0: *1 http chunk: 5499
+2017/04/27 20:44:20 [debug] 27953#0: *1 write old buf t:1 f:0 00007FD19A3B2200, pos 00007FD19A3B2200, size: 157 file: 0, size: 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 write old buf t:1 f:0 00007FD19A3B2390, pos 00007FD19A3B2390, size: 4 file: 0, size: 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 write old buf t:1 f:0 00007FD19A3B1D38, pos 00007FD19A3B1D38, size: 28 file: 0, size: 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 write old buf t:0 f:0 0000000000000000, pos 00000000006D7296, size: 2 file: 0, size: 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 write new buf t:1 f:0 00007FD19A3B2588, pos 00007FD19A3B2588, size: 6 file: 0, size: 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 write new buf t:1 f:0 00007FD19A3B4A50, pos 00007FD19A3B4A50, size: 5499 file: 0, size: 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 write new buf t:0 f:0 0000000000000000, pos 00000000006D7296, size: 2 file: 0, size: 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 http write filter: l:0 f:0 s:5698
+2017/04/27 20:44:20 [debug] 27953#0: *1 http write filter limit 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 writev: 5698 of 5698
+2017/04/27 20:44:20 [debug] 27953#0: *1 http write filter 0000000000000000
+2017/04/27 20:44:20 [debug] 27953#0: *1 http copy filter: 0 "/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua resume returned 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua light thread ended normally
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua deleting light thread
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua run thread returned 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 http set discard body
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua sending last buf of the response body
+2017/04/27 20:44:20 [debug] 27953#0: *1 http output filter "/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 http copy filter: "/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua capture body filter, uri "/t"
+2017/04/27 20:44:20 [debug] 27953#0: *1 http postpone filter "/t?" 00007FFD69C59BB0
+2017/04/27 20:44:20 [debug] 27953#0: *1 http chunk: 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 write new buf t:0 f:0 0000000000000000, pos 00000000006D7293, size: 5 file: 0, size: 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 http write filter: l:1 f:0 s:5
+2017/04/27 20:44:20 [debug] 27953#0: *1 http write filter limit 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 writev: 5 of 5
+2017/04/27 20:44:20 [debug] 27953#0: *1 http write filter 0000000000000000
+2017/04/27 20:44:20 [debug] 27953#0: *1 http copy filter: 0 "/t?"
+2017/04/27 20:44:20 [debug] 27953#0: *1 http finalize request: 200, "/t?" a:1, c:1
+2017/04/27 20:44:20 [debug] 27953#0: *1 http request count:1 blk:0
+2017/04/27 20:44:20 [debug] 27953#0: *1 http close request
+2017/04/27 20:44:20 [debug] 27953#0: *1 cleanup lua tcp socket request: "/t"
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua finalize socket
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua close socket connection
+2017/04/27 20:44:20 [debug] 27953#0: *1 free: 00007FD19A384A40, unused: 48
+2017/04/27 20:44:20 [debug] 27953#0: *1 reusable connection: 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 lua request cleanup: forcible=0
+2017/04/27 20:44:20 [debug] 27953#0: *1 http log handler
+2017/04/27 20:44:20 [debug] 27953#0: *1 free: 00007FD19A3B4A50
+2017/04/27 20:44:20 [debug] 27953#0: *1 free: 00007FD19A3B3A40
+2017/04/27 20:44:20 [debug] 27953#0: *1 free: 00007FD19A3B2A30
+2017/04/27 20:44:20 [debug] 27953#0: *1 free: 00007FD19A3B0A10, unused: 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 free: 00007FD19A3B1A20, unused: 817
+2017/04/27 20:44:20 [debug] 27953#0: *1 close http connection: 9
+2017/04/27 20:44:20 [debug] 27953#0: *1 reusable connection: 0
+2017/04/27 20:44:20 [debug] 27953#0: *1 free: 00007FD19A37AD70
+2017/04/27 20:44:20 [debug] 27953#0: *1 free: 00007FD19A38BE80, unused: 128
+2017/04/27 20:44:20 [debug] 27953#0: timer delta: 3
+2017/04/27 20:44:20 [debug] 27953#0: worker cycle
+2017/04/27 20:44:20 [debug] 27953#0: epoll timer: -1
+2017/04/27 20:44:20 [notice] 27953#0: signal 3 (SIGQUIT) received, shutting down
+2017/04/27 20:44:20 [info] 27953#0: epoll_wait() failed (4: Interrupted system call)
+2017/04/27 20:44:20 [debug] 27953#0: timer delta: 73
+2017/04/27 20:44:20 [debug] 27953#0: flush files
+2017/04/27 20:44:20 [notice] 27953#0: exit
+2017/04/27 20:44:20 [debug] 27953#0: epoll del event: fd:6 op:2 ev:00000000
+2017/04/27 20:44:20 [debug] 27953#0: close listening 0.0.0.0:1984 #6 
+2017/04/27 20:44:20 [debug] 27953#0: run cleanup: 00007FD19A3A91F8
+2017/04/27 20:44:20 [debug] 27953#0: lua decrementing the reference count for Lua VM: 1
+2017/04/27 20:44:20 [debug] 27953#0: lua close the global Lua VM 0000000041EF6378
+2017/04/27 20:44:20 [debug] 27953#0: run cleanup: 00007FD19A3A91E0
+2017/04/27 20:44:20 [debug] 27953#0: run cleanup: 00007FD19A3A17E8
+2017/04/27 20:44:20 [debug] 27953#0: run cleanup: 00007FD19A3A17B8
+2017/04/27 20:44:20 [debug] 27953#0: run cleanup: 00007FD19A3A1788
+2017/04/27 20:44:20 [debug] 27953#0: run cleanup: 00007FD19A39F1C8
+2017/04/27 20:44:20 [debug] 27953#0: cleanup resolver
+2017/04/27 20:44:20 [debug] 27953#0: free: 0000000000000000
+2017/04/27 20:44:20 [debug] 27953#0: free: 0000000000000000
+2017/04/27 20:44:20 [debug] 27953#0: free: 00007FD19A3AD970
+2017/04/27 20:44:20 [debug] 27953#0: free: 00007FD19A3A2B60
+2017/04/27 20:44:20 [debug] 27953#0: free: 00007FD19A39C890
+2017/04/27 20:44:20 [debug] 27953#0: free: 00007FD19A3965C0
+2017/04/27 20:44:20 [debug] 27953#0: free: 00007FD19A3955B0
+2017/04/27 20:44:20 [debug] 27953#0: free: 00007FD19A3904E0
+2017/04/27 20:44:20 [debug] 27953#0: free: 00007FD19A38F420
+2017/04/27 20:44:20 [debug] 27953#0: free: 00007FD19A38E360
+2017/04/27 20:44:20 [debug] 27953#0: free: 00007FD19A38C0A0
+2017/04/27 20:44:20 [debug] 27953#0: free: 00007FD19A37BE20, unused: 0
+2017/04/27 20:44:20 [debug] 27953#0: free: 00007FD19A384E50, unused: 1
+2017/04/27 20:44:20 [debug] 27953#0: free: 00007FD19A3915A0, unused: 0
+2017/04/27 20:44:20 [debug] 27953#0: free: 00007FD19A398880, unused: 0
+2017/04/27 20:44:20 [debug] 27953#0: free: 00007FD19A39EB50, unused: 0
+2017/04/27 20:44:20 [debug] 27953#0: free: 00007FD19A3A9150, unused: 10880
